@@ -10,6 +10,8 @@
 		F66C866D20801DF40010DBA1 /* Swift_Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66C866320801DF40010DBA1 /* Swift_Helpers.framework */; };
 		F66C867420801DF40010DBA1 /* Swift_Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = F66C866620801DF40010DBA1 /* Swift_Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F66C868020801E130010DBA1 /* UIImage_FromColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66C867F20801E130010DBA1 /* UIImage_FromColor.swift */; };
+		F66C868B208029B20010DBA1 /* ColorSaturation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66C8689208029B20010DBA1 /* ColorSaturation.swift */; };
+		F66C868C208029B20010DBA1 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F66C868A208029B20010DBA1 /* RGBColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		F66C866C20801DF40010DBA1 /* Swift_HelpersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Swift_HelpersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66C867320801DF40010DBA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66C867F20801E130010DBA1 /* UIImage_FromColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_FromColor.swift; sourceTree = "<group>"; };
+		F66C8689208029B20010DBA1 /* ColorSaturation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSaturation.swift; sourceTree = "<group>"; };
+		F66C868A208029B20010DBA1 /* RGBColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		F66C867D20801DFA0010DBA1 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F66C8688208029B20010DBA1 /* Color */,
 				F66C867E20801E060010DBA1 /* Extensions */,
 			);
 			path = UIKit;
@@ -100,6 +105,15 @@
 				F66C867F20801E130010DBA1 /* UIImage_FromColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F66C8688208029B20010DBA1 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F66C8689208029B20010DBA1 /* ColorSaturation.swift */,
+				F66C868A208029B20010DBA1 /* RGBColor.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +243,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66C868C208029B20010DBA1 /* RGBColor.swift in Sources */,
 				F66C868020801E130010DBA1 /* UIImage_FromColor.swift in Sources */,
+				F66C868B208029B20010DBA1 /* ColorSaturation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
